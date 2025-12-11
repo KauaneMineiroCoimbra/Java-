@@ -1,23 +1,43 @@
-
-import java.util.Scanner;
-
-/*
+/*Escreva um programa que leia o número de cadastro de um funcionário,
+seu número de horas trabalhadas, 
+o valor que recebe por hora
+e calcula o salário desse funcionário.
+ mostrar na tela o número, salário 
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
 /**
  *
- * @authora Kauane Mineiro
- */
-//Aula 2 - Operadores Matematicos
-//Exercicio 02 - declarra int e dobro
-public class Operadores_Matematicos_02 {
+ * @authora kauane
+ */import java.util.Scanner;
+public class Exercicio_9 {
+  
+ public static void main (String [] args){   
+ Scanner entrada = new Scanner (System.in);  
  
-    public static int dobro (int n) {
-    return n*2;
-    }
-    public static void main(String[] args) {
-     System.out.println (dobro(7));
-    }
+ //declaração de variaveis
+ int numero;
+ double valorHora, salario, Horas;
+ 
+ //entrada de dados 
+ System.out.print("Digite o número do funcionário:");
+ numero = entrada.nextInt();
+ System.out.print("Digite o horas do funcionário: ");
+ Horas = entrada.nextInt();
+ System.out.print("Digite o valor por Hora: ");
+ valorHora = entrada.nextInt();
+ 
+//processamento 
+ salario = Horas * valorHora;
+ 
+//saida de dados
+System.out.println("Número do funcionário = " + numero);
+System.out.println("salario = R$" +salario); }
+ 
+ 
+
+//fim
+ 
+ 
 }
